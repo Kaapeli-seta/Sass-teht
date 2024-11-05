@@ -1,0 +1,26 @@
+@use "_base" as *;
+
+nav {
+  ul {
+    list-style-type: none;
+    background-color: $primary-color;
+    overflow: auto;
+    padding: 0;
+    margin: 0 0 $paddaing-16;
+  }
+  height: 100px;
+  li {
+    float: left;
+    a {
+      display: block;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: white;
+      padding: _base.$paddaing-16 18px;
+      &:hover {
+        background-color: $warning-color;
+        color: black;
+      }
+    }
+  }
+}
